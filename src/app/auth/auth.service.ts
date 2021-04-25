@@ -29,7 +29,7 @@ export class AuthService {
   checkUserPermissions(permissionRequired: string): boolean {
     const sessionStorageUser = sessionStorage.getItem('authUser');
     const authUser = sessionStorageUser ? JSON.parse(sessionStorageUser) : '';
-    const permissionUser = authUser.user?.permissions.find(
+    const permissionUser = authUser.user?.key_access.find(
       (element) => {
         return element === permissionRequired
       }

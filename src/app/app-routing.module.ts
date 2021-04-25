@@ -5,9 +5,14 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: 'dashboard', pathMatch: 'full',
     component: AppComponent
-  }
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'login'
+  },
 ];
 
 @NgModule({
