@@ -1,0 +1,25 @@
+<nav id="sidebar" class="navbar">
+  <ul class="navbar-nav ">
+    <li class=" nav-item">
+      <i class="icon-atlasware-menu" [ngStyle]="applyIconImage(logoMenu)"></i>
+    </li>
+    <li class="nav-item" routerLinkActive="item-active">
+      <a class="icon-home" [ngStyle]="applyIconImage(iconHome)" [routerLink]="true ? '/dashboard': null "
+        routerLinkActive="active"></a>
+    </li>
+    <li class="nav-item">
+      <a class="icon-register" [ngStyle]="applyIconImage(iconRegister)" [routerLink]="true ? '/register': null "
+        routerLinkActive="active"></a>
+    </li>
+    <li class="nav-item">
+      <a class="icon-user" [ngStyle]="applyIconImage(iconUsers)" [routerLink]="true ? '/register': null "
+        routerLinkActive="active"></a>
+    </li>
+    <li class="nav-item">
+      <a>Graficos</a>
+    </li>
+    <li class="nav-item">
+      <a>Blabla</a>
+    </li>
+  </ul>
+</nav>

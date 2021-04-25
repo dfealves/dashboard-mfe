@@ -1,0 +1,49 @@
+@import "../../../../styles/abstracts/variables";
+@import "../../../../styles/base/typography";
+
+:host {
+}
+
+.active {
+  background-color: $blue !important;
+}
+.item-active {
+  border-left: 5px solid $blue !important;
+}
+
+.navbar {
+  min-width: 70px;
+  min-height: 100vh;
+  display: block;
+  background: linear-gradient(180deg, $white-bg-color 0%, rgba(255, 255, 255, 0) 100%);
+  filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
+  padding: 0 !important;
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    border-left: 5px solid white;
+
+    &:first-child {
+      margin-bottom: 100px;
+    }
+    a {
+      margin-top: 20px;
+    }
+
+    .icon-atlasware-menu {
+      margin-top: 25px;
+      background-color: $blue;
+      height: 42px;
+      width: 48px;
+    }
+
+    .icon-home,
+    .icon-register,
+    .icon-user {
+      background-color: $light-gray;
+      height: 28px;
+      width: 28px;
+    }
+  }
+}
